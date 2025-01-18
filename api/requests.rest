@@ -1,0 +1,45 @@
+GET http://localhost:3001/item
+
+###
+POST http://localhost:3001/item/new
+Content-Type: application/json
+
+{
+    "item": "bread"
+}
+
+###
+GET http://localhost:3001/category
+
+
+###
+POST http://localhost:3001/category/new 
+Content-Type: application/json
+
+{
+    "name": "Household Items"
+}
+
+###
+POST http://localhost:3001/item/add-to-category
+Content-Type: application/json
+
+{
+    "categoryId": "673fd1fddc69e31dba3b4907",
+    "itemName": "toilet paper"
+}
+
+###
+DELETE http://localhost:3001/item/delete/
+
+###
+PUT http://localhost:3001/item/bought/673d3d9c193773794d1f12a9
+
+###
+DELETE http://localhost:3001/category/delete/6751e6ac2871677ae438a471
+
+###
+Get www.themealdb.com/api/json/v1/1/search.php?s=chicken
+
+###
+get www.themealdb.com/api/json/v1/1/filter.php?a=Jamaican
